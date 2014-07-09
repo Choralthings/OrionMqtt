@@ -75,26 +75,26 @@ These are the basic commands to send:
 then you can read the standard configuration sending #CFG.
 The answer is:
 
-Greenwich rev. 1.20, 28/05/2014
-EGS5 rev.
-IMEI: 3566120xxxxxxxx
-#SETID: 2
-#SNOP:
-#GPRSCFG: web.omnitel.it,TCP,123.456.111.1,1883
-#TRKCFG: IP,USR,$CHX,,1
-#TRKTM: 1
-#TRK: OFF
-#PUBTOPIC: 10000038/1/
-#SLPTM: 6
-#SLP: OFF
-#STILLTM: 5
-#MOVSENS: OFF
-#IGNCFG:
-#UARTCFG: 115200,DIS,RS232,\n,0,0,\n,RS232,50
-#SIG: 24,8
-#VBAT: 4.4V
+ Greenwich rev. 1.20, 28/05/2014
+ EGS5 rev.
+ IMEI: 3566120xxxxxxxx
+ #SETID: 2
+ #SNOP:
+ #GPRSCFG: web.omnitel.it,TCP,123.456.111.1,1883
+ #TRKCFG: IP,USR,$CHX,,1
+ #TRKTM: 1
+ #TRK: OFF
+ #PUBTOPIC: 10000038/1/
+ #SLPTM: 6
+ #SLP: OFF
+ #STILLTM: 5
+ #MOVSENS: OFF
+ #IGNCFG:
+ #UARTCFG: 115200,DIS,RS232,\n,0,0,\n,RS232,50
+ #SIG: 24,8
+ #VBAT: 4.4V
 
-#ACK_OK
+ #ACK_OK
 
 You can enable the tracking writing #TRK ON
 In this configuration, the device will open a mqtt connection with the server "123.456.111.1" and it will publish a message with the topic 10000038/1/"SETID".
@@ -107,12 +107,12 @@ You can find the message description inside the software manual.
 
 If you want change the GPRS configuration, you must use the command:
 
-#GPRSCFG web.omnitel.it,TCP,123.456.111.1,1883
+ #GPRSCFG web.omnitel.it,TCP,123.456.111.1,1883
 
 where you can change APN, and broker server (in this example apn = web.omnitel.it and the server = 123.456.111.1)
 For example, you can write:
 
-#GPRSCFG ibox.tim.it,TCP,456.123.123.123,1883
+ #GPRSCFG ibox.tim.it,TCP,456.123.123.123,1883
 
 It depends from your SIM operator and your broker server address.
 If you change the GPRSCFG, the device will reboot to change the configuration.
