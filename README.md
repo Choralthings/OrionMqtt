@@ -70,7 +70,7 @@ Java application will start in about 40 seconds (the device switch on with ^SYSS
 the second ^SYSSTART urc).
 These are the basic commands to send:
 
-#PWD 1234567890
+ #PWD 1234567890
 
 then you can read the standard configuration sending #CFG.
 The answer is:
