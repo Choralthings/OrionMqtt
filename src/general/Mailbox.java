@@ -53,7 +53,7 @@ public class Mailbox extends Monitor {
 	
 	public void write (Object d) {
 		mEnter();	// prologue
-		if (numData == numEl) spaceAval.cWait();	// non c'è spazio
+		if (numData == numEl) spaceAval.cWait();	// non c'Ã¨ spazio
 		data[tail] = d;
 		tail = (++tail) % numEl;
 		numData++;

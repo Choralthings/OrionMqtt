@@ -242,7 +242,7 @@ public class CommGPStrasparent extends ThreadCustom implements GlobCost {
 							    					try{					    					
 								    					// Speed
 							    						if(debug)
-							    							System.out.println("Velocit‡ precedente: " + DFSSpeed);
+							    							System.out.println("Velocit√† precedente: " + DFSSpeed);
 							    						infoS.setPreSpeedDFS(DFSSpeed);
 								    					DFSSpeed = Double.parseDouble(SpliRMCstring.substring(0, SpliRMCstring.indexOf(",")));
 								    					gpsReset = 0;

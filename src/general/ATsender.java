@@ -1153,7 +1153,7 @@ public class ATsender extends ThreadCustom implements GlobCost {
 							// Indicates that CSD connection isn't in use yet, to close UpdateSCD
 							infoS.setCSDconnect(false);
 	
-							// Authentication non più valida
+							// Authentication non piÃ¹ valida
 							auth = false;
 			    		
 						} //csdRead			
