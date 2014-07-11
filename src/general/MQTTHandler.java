@@ -12,21 +12,21 @@ import org.eclipse.paho.client.mqttv3.internal.MemoryPersistence;
 public class MQTTHandler  implements MqttCallback{
 	private MqttClient client;
 	private String clientId;
-	private String brockerURL;
+	private String brokerURL;
 	private SocketGPRStask view;
 	
-	public MQTTHandler(String clientId, String brockerURL){
+	public MQTTHandler(String clientId, String brokerURL){
 		this.clientId = clientId;
-		this.brockerURL = brockerURL;
+		this.brokerURL = brokerURL;
 	}
 
-	public synchronized void connectToBrocker()
+	public synchronized void connectToBroker()
 			throws MqttSecurityException, MqttException {
 			//System.out.println("Client ID: " + clientId);
-			//System.out.println("Connecting to: " + brockerURL);
+			//System.out.println("Connecting to: " + brokerURL);
 
 		// Construct the MqttClient instance
-		client = new MqttClient(brockerURL, clientId, new MemoryPersistence());
+		client = new MqttClient(brokerURL, clientId, new MemoryPersistence());
 		// Set this wrapper as the callback handler
 		client.setCallback(this);
 		// Connect to the server
@@ -45,7 +45,7 @@ public class MQTTHandler  implements MqttCallback{
 
 		if (client == null) {
 			//System.out.println("Client non connesso");
-			connectToBrocker();
+			connectToBroker();
 		}
 		//System.out.println("Client: publish");
 		
@@ -68,7 +68,7 @@ public class MQTTHandler  implements MqttCallback{
 		} else {
 			// client.connect();
 			//System.out.println("Client: publish7");
-			connectToBrocker();
+			connectToBroker();
 
 			try {
 				Thread.sleep(1000);
@@ -99,7 +99,7 @@ public class MQTTHandler  implements MqttCallback{
 			client.subscribe(topicName, qos);
 		} else {
 			// client.connect();
-			connectToBrocker();
+			connectToBroker();
 
 			try {
 				Thread.sleep(1000);

@@ -294,7 +294,7 @@ public class SocketGPRStask extends ThreadCustom implements GlobCost {
 								
 								// Open GPRS Channel
 								
-								// connect to MQTT Brocker
+								// connect to MQTT broker
 								semAT.getCoin(5);
 								try {
 									if(firstTime){
@@ -302,7 +302,7 @@ public class SocketGPRStask extends ThreadCustom implements GlobCost {
 										mqttH.applyView(this);
 									}
 									//System.out.println("TT*SocketGPRSTask: ***************************:");
-									mqttH.connectToBrocker();
+									mqttH.connectToBroker();
 									firstTime = false;
 								} catch (MqttSecurityException e1) {
 									e1.printStackTrace();
