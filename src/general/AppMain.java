@@ -1275,7 +1275,7 @@ public class AppMain extends MIDlet implements GlobCost {
 								}
 																
 								/*
-								 * Se è attivo il timer GPS -> STOP e RESET
+								 * Se Ã¨ attivo il timer GPS -> STOP e RESET
 								 */
 								if (gpsTimerAlive == true) {
 									
