@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="org/eclipse/paho/client/mqttv3/MqttDefaultFilePersistence.java|org/eclipse/paho/client/mqttv3/internal/FileLock.java|org/eclipse/paho/client/mqttv3/internal/LocalNetworkModule.java|org/eclipse/paho/client/mqttv3/internal/ResourceBundleCatalog.java|org/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory.java|org/eclipse/paho/client/mqttv3/internal/trace/TraceFileDestination.java" kind="src" path="res"/>
+	<classpathentry kind="con" path="org.elipse.mtj.JavaMEContainer/Cinterion IMP-NG ABC2 Wireless Toolkit/IMP_NG_ABC2"/>
+	<classpathentry exported="true" kind="lib" path="lib/GWLIB.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

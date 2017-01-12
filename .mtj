@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mtjMetadata jad="OrionMqtt.jad" version="1.2.1.201101310801">
+   <device group="Cinterion IMP-NG ABC2 Wireless Toolkit" name="IMP_NG_ABC2"/>
+   <signing projectSpecific="false" signProject="false">
+      <alias/>
+   </signing>
+   <configurations>
+      <configuration active="true" name="IMP_NG_ABC2">
+         <device group="Cinterion IMP-NG ABC2 Wireless Toolkit" name="IMP_NG_ABC2"/>
+         <symbolSet name="IMP_NG_ABC2">
+            <symbol name="CLDC" value="1.1"/>
+            <symbol name="SIEMENS-ICM" value="1.0"/>
+            <symbol name="IMP-NG" value="1.0"/>
+         </symbolSet>
+      </configuration>
+   </configurations>
+</mtjMetadata>

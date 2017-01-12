@@ -1,0 +1,7 @@
+MIDlet-1: AppMain,,general.AppMain
+MIDlet-Jar-URL: OrionMqtt.jar
+MIDlet-Name: OrionMqtt MIDlet Suite
+MIDlet-Vendor: MIDlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: IMP-NG-2.0
